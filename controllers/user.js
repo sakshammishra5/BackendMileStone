@@ -26,6 +26,7 @@ module.exports.register = async (req, res) => {
         if (existingUser) {
             return res.status(409).json({ error: 'Email already registered' });
         }
+        console.log("existing User",existingUser)
 
         // === Hash password ===
         const hashedPassword = await bcrypt.hash(password, 10);
@@ -36,10 +37,9 @@ module.exports.register = async (req, res) => {
             email,
             password: hashedPassword
         });
-
+        console.log("user",user)
         await user.save();
 
-        // === Success Response ===
         res.status(201).json({
             message: 'User registered successfully',
             user: {
@@ -50,7 +50,8 @@ module.exports.register = async (req, res) => {
         });
 
     } catch (error) {
-        // Handle MongoDB duplicate key error (e.g., email already exists due to unique index)
+        
+        console.log(error)
         if (error.code === 11000) {
             return res.status(409).json({ error: 'Email already registered' });
         }
