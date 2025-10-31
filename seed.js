@@ -39,16 +39,14 @@ const seedBooks = async () => {
 
   const books = [
     {
-      id: 'B001',
-      titile: 'The Great Gatsby',
+      title: 'The Great Gatsby',
       author: 'F. Scott Fitzgerald',
       genre: 'Classic',
       price: 10.99,
       inStock: true
     },
     {
-      id: 'B002',
-      titile: '1984',
+      title: '1984',
       author: 'George Orwell',
       genre: 'Dystopian',
       price: 8.99,
@@ -56,7 +54,7 @@ const seedBooks = async () => {
     },
     {
       id: 'B003',
-      titile: 'To Kill a Mockingbird',
+      title: 'To Kill a Mockingbird',
       author: 'Harper Lee',
       genre: 'Fiction',
       price: 12.50,
@@ -64,7 +62,7 @@ const seedBooks = async () => {
     },
     {
       id: 'B004',
-      titile: 'Pride and Prejudice',
+      title: 'Pride and Prejudice',
       author: 'Jane Austen',
       genre: 'Romance',
       price: 9.75,
@@ -72,7 +70,7 @@ const seedBooks = async () => {
     },
     {
       id: 'B005',
-      titile: 'The Hobbit',
+      title: 'The Hobbit',
       author: 'J.R.R. Tolkien',
       genre: 'Fantasy',
       price: 14.99,
@@ -80,7 +78,7 @@ const seedBooks = async () => {
     },
     {
       id: 'B006',
-      titile: 'Brave New World',
+      title: 'Brave New World',
       author: 'Aldous Huxley',
       genre: 'Dystopian',
       price: 11.25,
@@ -88,7 +86,7 @@ const seedBooks = async () => {
     },
     {
       id: 'B007',
-      titile: 'Moby-Dick',
+      title: 'Moby-Dick',
       author: 'Herman Melville',
       genre: 'Adventure',
       price: 13.80,
@@ -96,23 +94,21 @@ const seedBooks = async () => {
     },
     {
       id: 'B008',
-      titile: 'War and Peace',
+      title: 'War and Peace',
       author: 'Leo Tolstoy',
       genre: 'Historical',
       price: 19.99,
       inStock: true
     },
     {
-      id: 'B009',
-      titile: 'The Catcher in the Rye',
+      title: 'The Catcher in the Rye',
       author: 'J.D. Salinger',
       genre: 'Coming-of-age',
       price: 10.49,
       inStock: false
     },
     {
-      id: 'B010',
-      titile: 'Harry Potter and the Sorcerer\'s Stone',
+      title: 'Harry Potter and the Sorcerer\'s Stone',
       author: 'J.K. Rowling',
       genre: 'Fantasy',
       price: 15.99,

@@ -15,13 +15,18 @@ module.exports.getAllBooks = async (req, res) => {
 module.exports.getBookById = async (req, res) => {
     try {
         const { id } = req.params
-        const book = await Book.findOne({ id })
+        console.log(id)
+        const book = await Book.findOne({ _id:id })
+        console.log(book)
         if (book) {
             res.status(200).json(book)
         }
+        else{
+          res.status(404).json({message:"Book not found"})
+        }
 
     } catch (error) {
-        res.status(404).error(error)
+        res.status(404).json({error})
     }
 }
 
